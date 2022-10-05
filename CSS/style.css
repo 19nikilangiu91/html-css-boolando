@@ -5,8 +5,9 @@
 }
 
 nav{
+    position: fixed;
+    width: 100%;
     background-color: orange;
-    min-height: 50px;
 }
 
 nav #flex-list{

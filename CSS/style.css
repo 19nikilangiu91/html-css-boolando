@@ -50,98 +50,121 @@ li{
 .flex-row-top{
     display: flex;
     justify-content: center;
-    margin: 10px 0;
+    margin: 20px auto;
 
     /* Debug */
-    background-color: yellow;
+    /* background-color: yellow; */
     min-height: 1px;
 }
 
-#product-top{
-    position: relative;
-    margin: 0 20px;
+.flex-row-bottom{
+    display: flex;
+    justify-content: center;
+    margin: 20px auto;
+
+    /* Debug */
+    /* background-color: yellow; */
+    min-height: 1px;
 }
 
-.man-one-t{
+/* Top Front and Behind */
+
+#product{
+    position: relative;
+    margin: 10px 20px;
+}
+
+.top{
+    position: relative;
+    width: 330px;
+}
+
+.behind{ 
     position: absolute;
-    width: 350px;
-    
+    width: 330px;
+    top:0;
+    right:0;
 }
 
-.man-one-b{
-    position: relative;
-    width: 350px;
-}
-
-#heart-f{
+#heart{
     font-size: 25px;
     position: absolute;
     background-color: white;
-    top: 2%;
-    right: 0;
-    padding: 5px;
+    top:5%;
+    right:0;
+    padding: 5px 10px;
     z-index: 100;
+} 
+
+#sconto{
+    background-color: red;
+    color: white;
+    padding: 1px;
+    position: absolute;
+    z-index: 100;
+    bottom:20%;
+    left: 0;
 }
 
-#sconto-f{
+#sconto-special{
     background-color: red;
     padding: 1px;
     position: absolute;
     z-index: 100;
-    bottom:10%;
+    bottom:20%;
     left: 0;
 }
 
-#text-f{
-    background-color: green;
+#sconto-special-one{
+    background-color: red;
+    color: white;
     padding: 1px;
     position: absolute;
     z-index: 100;
-    bottom:10%;
-    left: 15%;
-}
-
- #heart-b{
-    font-size: 25px;
-    position: relative;
-    background-color: white;
-    top: 10%;
-    right: 0;
-    padding: 5px;
-    z-index: 100;
-} 
-
-#sconto-b{
-    background-color: red;
-    padding: 1px;
-    position: relative;
-    z-index: 100;
-    bottom:10%;
+    bottom:20%;
     left: 0;
 }
 
-#text-b{
+#text{
     background-color: green;
+    color: white;
     padding: 1px;
-    position: relative;
+    position: absolute;
     z-index: 100;
-    bottom:10%;
+    bottom:20%;
     left: 15%;
 } 
 
+#text-special-one{
+    background-color: green;
+    color: white;
+    padding: 1px;
+    position: absolute;
+    z-index: 100;
+    bottom:20%;
+    left: 15%;
+} 
 
+#text-special-two{
+    background-color: green;
+    color: white;
+    padding: 1px;
+    position: absolute;
+    z-index: 100;
+    bottom:20%;
+    left:0;
+} 
 
-/* .woman.three{
-    width: 350px;
-
+h5{
+    color: grey;
 }
 
-.woman.two{
-    width: 350px;
-    position: relative;
-   
-} */
+.prizeone{
+    color: red;
+}
 
-
+.prizetwo{
+    text-decoration: line-through;
+}
 
 

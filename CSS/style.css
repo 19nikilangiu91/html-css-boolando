@@ -175,9 +175,6 @@ h5{
     justify-content: space-between;
     padding: 10px 180px;
     color: white;
-    
-    min-height: 50px;
-    /* Debug */
     background-color: orange;
 }
 

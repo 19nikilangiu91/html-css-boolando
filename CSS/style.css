@@ -59,25 +59,21 @@ li{
 
 #product-top{
     position: relative;
-    margin: 0 10px;
+    margin: 0 20px;
 }
 
-.man.one{
-    width: 300px;
+.man-one-t{
+    position: absolute;
+    width: 350px;
     
 }
 
-.woman.two{
-    width: 300px;
-   
+.man-one-b{
+    position: relative;
+    width: 350px;
 }
 
-.woman.three{
-    width: 300px;
-
-}
-
-#heart{
+#heart-f{
     font-size: 25px;
     position: absolute;
     background-color: white;
@@ -87,17 +83,16 @@ li{
     z-index: 100;
 }
 
-.sconto{
+#sconto-f{
     background-color: red;
     padding: 1px;
     position: absolute;
     z-index: 100;
     bottom:10%;
     left: 0;
-    
 }
 
-.text{
+#text-f{
     background-color: green;
     padding: 1px;
     position: absolute;
@@ -105,6 +100,47 @@ li{
     bottom:10%;
     left: 15%;
 }
+
+ #heart-b{
+    font-size: 25px;
+    position: relative;
+    background-color: white;
+    top: 10%;
+    right: 0;
+    padding: 5px;
+    z-index: 100;
+} 
+
+#sconto-b{
+    background-color: red;
+    padding: 1px;
+    position: relative;
+    z-index: 100;
+    bottom:10%;
+    left: 0;
+}
+
+#text-b{
+    background-color: green;
+    padding: 1px;
+    position: relative;
+    z-index: 100;
+    bottom:10%;
+    left: 15%;
+} 
+
+
+
+/* .woman.three{
+    width: 350px;
+
+}
+
+.woman.two{
+    width: 350px;
+    position: relative;
+   
+} */
 
 
 

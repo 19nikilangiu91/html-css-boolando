@@ -1,11 +1,13 @@
+/* General Rules */
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+/* Header Rules */
 nav{
-    position: fixed;
+    /* position: fixed; */
     width: 100%;
     background-color: orange;
 }
@@ -43,3 +45,67 @@ li{
     display: flex;
     justify-content: right;
 }
+
+/* Main Rules */
+.flex-row-top{
+    display: flex;
+    justify-content: center;
+    margin: 10px 0;
+
+    /* Debug */
+    background-color: yellow;
+    min-height: 1px;
+}
+
+#product-top{
+    position: relative;
+    margin: 0 10px;
+}
+
+.man.one{
+    width: 300px;
+    
+}
+
+.woman.two{
+    width: 300px;
+   
+}
+
+.woman.three{
+    width: 300px;
+
+}
+
+#heart{
+    font-size: 25px;
+    position: absolute;
+    background-color: white;
+    top: 2%;
+    right: 0;
+    padding: 5px;
+    z-index: 100;
+}
+
+.sconto{
+    background-color: red;
+    padding: 1px;
+    position: absolute;
+    z-index: 100;
+    bottom:10%;
+    left: 0;
+    
+}
+
+.text{
+    background-color: green;
+    padding: 1px;
+    position: absolute;
+    z-index: 100;
+    bottom:10%;
+    left: 15%;
+   
+}
+
+
+

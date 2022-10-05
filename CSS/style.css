@@ -3,3 +3,42 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+nav{
+    background-color: orange;
+    min-height: 50px;
+}
+
+nav #flex-list{
+    display: flex;
+    justify-content:space-around;
+    line-height: 50px;
+}
+
+a{
+   text-decoration: none;
+}
+
+#flex-logo a{
+    background-image: url(../img/boolean-logo.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    padding: 0 50px;
+}
+
+li{
+    list-style-type: none;
+    margin-left: 10px;
+    color: white;
+}
+
+#flex-list .left-side{
+    display: flex;
+    justify-content: left;
+}
+
+#flex-list .right-side{
+    display: flex;
+    justify-content: right;
+}

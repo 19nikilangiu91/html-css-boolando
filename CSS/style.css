@@ -175,19 +175,19 @@ h5{
     justify-content: space-between;
     padding: 10px 180px;
     color: white;
-    background-color: orange;
+    background-color: black;
 }
 
 .flex-footer-bottomrow{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    padding: 0px 180px 0px 170px;
+    padding: 10px 180px 10px 170px;
     color: white;
     
-    min-height: 50px;
+    /* min-height: 50px; */
     /* Debug */
-    background-color: orange;
+    background-color: black;
 }
 
 ul{

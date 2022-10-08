@@ -1,0 +1,237 @@
+/* General Rules */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Header Rules */
+nav{
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #ff5722;
+    
+}
+
+nav #flex-list{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-around;
+    line-height: 50px;
+}
+
+a{
+   text-decoration: none;
+}
+
+#flex-logo a{
+    background-image: url(../img/boolean-logo.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    padding: 0 50px;
+}
+
+li{
+    list-style-type: none;
+    margin-left: 10px;
+    color: white;
+}
+
+#flex-list .left-side{
+    display: flex;
+    justify-content: left;
+}
+
+#flex-list .right-side{
+    display: flex;
+    justify-content: right;
+    padding-right: 10px;
+}
+
+/* Main Rules */
+
+main{
+    /* DEBUG */
+    /* background-color: blue; */
+}
+
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly; 
+    width: 80%;
+    margin:50px auto 0 auto;
+
+    /* DEBUG */
+    /* background-color: yellow; */
+}
+
+/* Card Front and Behind */
+
+.card{
+    position: relative;
+    width: 300px;
+    margin: 10px 30px;
+    height: 490px;
+    /* DEBUG */
+    /* background-color: blueviolet; */
+}
+
+.front .a{
+    position: absolute;
+    width: 300px;
+    z-index: 501;
+}
+
+.behind .b{ 
+    position: absolute;
+    width: 300px;
+    z-index: 500;
+}
+
+.front .a:hover{
+    cursor: pointer;
+    z-index: 500;
+}
+
+.behind .b:hover{
+    cursor: pointer;
+    z-index: 501;
+}   
+
+.heart{
+    font-size: 25px;
+    position: absolute;
+    background-color: white;
+    padding: 5px;
+    z-index: 502;
+    top:10px;
+    right:0;
+} 
+
+.heart:hover{
+    background-color: black;
+    color: red;
+}
+
+.sconto{
+    background-color: red;
+    color: white;
+    padding: 1px;
+    position: absolute;
+    z-index: 502;
+    bottom: 20%;
+    left: 0;
+}
+
+.sconto-special{
+    background-color: red;
+    padding: 1px;
+    position: absolute;
+    z-index: 502;
+    bottom:20%;
+    left: 0;
+}
+
+.sconto-special-one{
+    background-color: red;
+    color: white;
+    padding: 1px;
+    position: absolute;
+    z-index: 502;
+    bottom:20%;
+    left: 0;
+}
+
+.text{
+    background-color: green;
+    color: white;
+    padding: 1px;
+    position: absolute;
+    z-index: 502;
+    bottom: 20%;
+    left: 13%;
+} 
+
+#text-special-one{
+    background-color: green;
+    color: white;
+    padding: 1px;
+    position: absolute;
+    z-index: 502;
+    bottom:20%;
+    left: 15%;
+} 
+
+#text-special-two{
+    background-color: green;
+    color: white;
+    padding: 1px;
+    position: absolute;
+    z-index: 502;
+    bottom:20%;
+    left:0;
+} 
+
+.content{
+    position: absolute;
+    font-size: 15px;
+    bottom: 0;
+}
+
+h5{
+    color: grey;
+}
+
+.prizeone{
+    color: red;
+}
+
+.prizetwo{
+    text-decoration: line-through;
+}
+
+/* Footer Rules */
+
+.flex-footer-toprow{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 190px;
+    color: white;
+    background-color: black;
+}
+
+.flex-footer-bottomrow{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 10px 190px 10px 180px;
+    color: white;
+    
+    /* min-height: 50px; */
+    /* Debug */
+    background-color: black;
+}
+
+.bottom-left{
+    display:flex;
+    list-style-type: none;
+}
+
+.bootom-right{
+    display:flex;
+    list-style-type: none;
+}
+
+.bootom-right li{
+    font-size: 14px;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}

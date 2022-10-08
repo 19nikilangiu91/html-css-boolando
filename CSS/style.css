@@ -7,9 +7,13 @@
 
 /* Header Rules */
 nav{
-    /* position: fixed; */
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    left: 0;
     width: 100%;
-    background-color: orange;
+    background-color: #ff5722;
+    
 }
 
 nav #flex-list{
@@ -45,97 +49,107 @@ li{
 #flex-list .right-side{
     display: flex;
     justify-content: right;
+    padding-right: 10px;
 }
 
 /* Main Rules */
-.flex-row-top{
+
+main{
+    /* DEBUG */
+    /* background-color: blue; */
+}
+
+.container{
     display: flex;
-    justify-content: center;
-    margin: 20px auto;
+    flex-wrap: wrap;
+    justify-content: space-evenly; 
+    width: 80%;
+    margin:50px auto 0 auto;
 
-    /* Debug */
+    /* DEBUG */
     /* background-color: yellow; */
-    min-height: 1px;
 }
 
-.flex-row-bottom{
-    display: flex;
-    justify-content: center;
-    margin: 20px auto;
+/* Card Front and Behind */
 
-    /* Debug */
-    /* background-color: yellow; */
-    min-height: 1px;
-}
-
-/* Top Front and Behind */
-
-#product{
+.card{
     position: relative;
-    margin: 10px 20px;
+    width: 300px;
+    margin: 10px 30px;
+    height: 490px;
+    /* DEBUG */
+    /* background-color: blueviolet; */
 }
 
-.top{
-    position: relative;
-    width: 330px;
+.front .a{
+    position: absolute;
+    width: 300px;
     z-index: 501;
 }
 
-.behind{ 
+.behind .b{ 
     position: absolute;
-    width: 330px;
-    top:0;
-    right:0;
+    width: 300px;
     z-index: 500;
 }
 
-#heart{
+.front .a:hover{
+    cursor: pointer;
+    z-index: 500;
+}
+
+.behind .b:hover{
+    cursor: pointer;
+    z-index: 501;
+}   
+
+.heart{
     font-size: 25px;
     position: absolute;
     background-color: white;
-    top:5%;
+    padding: 5px;
+    z-index: 502;
+    top:10px;
     right:0;
-    padding: 5px 10px;
-    z-index: 501;
 } 
 
-#sconto{
+.sconto{
     background-color: red;
     color: white;
     padding: 1px;
     position: absolute;
-    z-index: 501;
-    bottom:20%;
+    z-index: 502;
+    bottom: 20%;
     left: 0;
 }
 
-#sconto-special{
+.sconto-special{
     background-color: red;
     padding: 1px;
     position: absolute;
-    z-index: 501;
+    z-index: 502;
     bottom:20%;
     left: 0;
 }
 
-#sconto-special-one{
+.sconto-special-one{
     background-color: red;
     color: white;
     padding: 1px;
     position: absolute;
-    z-index: 501;
+    z-index: 502;
     bottom:20%;
     left: 0;
 }
 
-#text{
+.text{
     background-color: green;
     color: white;
     padding: 1px;
     position: absolute;
-    z-index: 501;
-    bottom:20%;
-    left: 15%;
+    z-index: 502;
+    bottom: 20%;
+    left: 13%;
 } 
 
 #text-special-one{
@@ -143,7 +157,7 @@ li{
     color: white;
     padding: 1px;
     position: absolute;
-    z-index: 501;
+    z-index: 502;
     bottom:20%;
     left: 15%;
 } 
@@ -153,10 +167,16 @@ li{
     color: white;
     padding: 1px;
     position: absolute;
-    z-index: 501;
+    z-index: 502;
     bottom:20%;
     left:0;
 } 
+
+.content{
+    position: absolute;
+    font-size: 15px;
+    bottom: 0;
+}
 
 h5{
     color: grey;
@@ -175,7 +195,7 @@ h5{
 .flex-footer-toprow{
     display: flex;
     justify-content: space-between;
-    padding: 10px 180px;
+    padding: 10px 190px;
     color: white;
     background-color: black;
 }
@@ -184,7 +204,7 @@ h5{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    padding: 10px 180px 10px 170px;
+    padding: 10px 190px 10px 180px;
     color: white;
     
     /* min-height: 50px; */
@@ -192,10 +212,18 @@ h5{
     background-color: black;
 }
 
-ul{
+.bottom-left{
     display:flex;
-    justify-content: flex-start;
     list-style-type: none;
+}
+
+.bootom-right{
+    display:flex;
+    list-style-type: none;
+}
+
+.bootom-right li{
+    font-size: 14px;
 }
 
 a{
